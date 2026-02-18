@@ -21,8 +21,8 @@ jobs:
       with:
         dotnet-version: 10.0.x
     - name: Restore dependencies
-      run: dotnet restore ClassLibaryProject/ClassLibraryProjects.sln
+      run: dotnet restore ClassLibraryProjects/ClassLibraryProjects.sln
     - name: Build
-      run: dotnet build ClassLibaryProject/ClassLibraryProjects.sln --no-restore
+      run: dotnet build ClassLibraryProjects/ClassLibraryProjects.sln --no-restore
     - name: Test
-      run: dotnet test ClassLibaryProject/ClassLibraryProjects.sln --no-build --verbosity normal
+      run: dotnet test ClassLibraryProjects/ClassLibraryProjects.sln --no-build --verbosity normal
